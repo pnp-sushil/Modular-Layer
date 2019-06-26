@@ -1,0 +1,20 @@
+# Visualization setting
+/control/execute init_vis.mac
+
+# Initialize kernel
+#/jpetmc/detector/loadOnlyScintillators
+/jpetmc/source/setType beam
+
+/jpetmc/source/gammaBeam/setEnergy 1000 keV
+
+# units cm
+/jpetmc/source/gammaBeam/setPosition 10 0 0 cm
+
+
+/run/initialize
+
+
+/vis/scene/add/scale   # Simple scale line
+/vis/scene/add/axes    # Simple axes: x=red, y=green, z=blue.
+
+/run/beamOn 100

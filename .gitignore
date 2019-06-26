@@ -1,0 +1,12 @@
+*.pdf
+build
+bin/jpet_mc
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+.*.swp
+bin/
+*.png
+*.bmp
+doc

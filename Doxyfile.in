@@ -1,0 +1,24 @@
+PROJECT_NAME           = "@CMAKE_PROJECT_NAME@"
+PROJECT_NUMBER         = @VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@
+STRIP_FROM_PATH        = @PROJECT_SOURCE_DIR@ \
+                         @PROJECT_BINARY_DIR@
+INPUT                  = @PROJECT_SOURCE_DIR@/README.md \
+                         @PROJECT_SOURCE_DIR@/src \
+                         @PROJECT_SOURCE_DIR@/include 
+
+USE_MDFILE_AS_MAINPAGE = README.md
+FILE_PATTERNS          = *.hh \
+                         *.cc 
+RECURSIVE              = YES
+
+EXTRACT_PRIVATE = YES
+EXTRACT_STATIC = YES
+INLINE_SOURCES = YES
+# Show all functions that reference current function
+REFERENCED_BY_RELATION = YES
+ 
+# Show all functions referenced by current function
+REFERENCES_RELATION = YES
+ 
+# Generate class diagrams for base class
+CLASS_DIAGRAMS = YES
